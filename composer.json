@@ -1,0 +1,24 @@
+{
+    "name": "foo",
+    "type": "library",
+    "description": "sample composer library",
+    "require": {
+        "php": ">=5.4",
+        "vlucas/phpdotenv": "2.0.*",
+        "nesbot/carbon": "^1.21",
+        "phpfastcache/phpfastcache": "3.0.*",
+        "illuminate/database": "5.0",
+        "illuminate/events": "5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Foo\\": "src/Foo"
+        },
+        "files": [
+            "src/Foo/Support/helpers.php"
+        ]
+    }
+}
